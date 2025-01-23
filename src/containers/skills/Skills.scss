@@ -24,8 +24,18 @@
   font-size: 56px;
   font-weight: 400;
 }
+
 .subTitle {
   color: $subTitle;
+}
+
+.skills-headline {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.skills-text {
+  margin: 0;
 }
 
 /* Media Query */
@@ -38,10 +48,6 @@
   .skills-heading {
     font-size: 30px;
     text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
   }
   .skills-main-div {
     flex-direction: column;

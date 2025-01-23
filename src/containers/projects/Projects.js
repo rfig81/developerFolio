@@ -16,7 +16,7 @@ export default function Projects() {
 
   useEffect(() => {
     const getRepoData = () => {
-      fetch("/profile.json")
+      fetch(`${process.env.PUBLIC_URL}/profile.json`)
         .then(result => {
           if (result.ok) {
             return result.json();
@@ -46,7 +46,7 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
+          <h2 className="project-title">Open Source Projects</h2>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               if (!v) {
